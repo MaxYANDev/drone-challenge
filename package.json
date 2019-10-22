@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "watch": "yarn watch-client & yarn watch-api",
-    "watch-api": "node src/api.js",
+    "watch-api": "nodemon src/api.js",
     "watch-client": "yarn poi src/client.js --serve"
   },
   "devDependencies": {
@@ -15,5 +15,10 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-fetch-hook": "^1.7.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express-fileupload": "^1.1.6-alpha.5",
+    "nodemon": "^1.19.4"
   }
 }

@@ -1,0 +1,61 @@
+:root{
+    --input-height: 2rem;
+    --input-width: 25vw;
+}
+
+.uploadFile{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+}
+
+.formContainer{
+    position: relative;
+    gap: 2rem;
+}
+
+.hideInput{
+    display: none;
+}
+
+.inputBox{
+    border: 2px solid lightskyblue;
+    border-radius: 5px;
+    height: var(--input-height);
+    width: var(--input-width);
+    text-align: center;
+    padding-top: 0.8rem;
+    cursor: pointer;
+}
+
+.submitButton{
+    height: var(--input-height);
+    width: var(--input-width);
+    border-radius: 5px;
+    background: #1890ff;
+    color: antiquewhite;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+}
+
+.result{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 25vw;
+    text-align: center;
+}
+
+.resultContainer{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding-top: 4rem;
+    justify-content: center;
+    justify-items: center;;
+}
+
+.refreshButton{
+    margin-top: 1rem;
+    background: #cc0000;
+}
