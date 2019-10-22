@@ -20,6 +20,7 @@ function UpLoadfile( {uploadFile} ){
         setFile(null);
         setText('Choose File From Your Computer');
     }
+
     return(
         <div className="uploadFile">
             <div className="uploadTitle">
@@ -59,6 +60,7 @@ function UpLoadfile( {uploadFile} ){
 
 function Result(props) {
     const { answer, message } = props;
+
     return (
         <div className="result">
             <div>
@@ -113,10 +115,8 @@ function App() {
                     </div>
                 </div>
             }
-        </div>
-        
+        </div>  
     );
 }
-
 
 ReactDOM.render(<App />, document.getElementById('app'));

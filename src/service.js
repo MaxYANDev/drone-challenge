@@ -34,12 +34,14 @@ exports.getBillboardsPosition = (instructoinsArray) => {
 
 exports.getSubArray = ( option, array ) => {
     let newArray = [];
+
     if( option === 'odd') {
         newArray = array.filter( (item , index) => {
             if( index % 2 === 1 ){
                 return item;
             }} );
     }
+    
     if( option === 'even') {
         newArray = array.filter(( item , index ) => {
             if( index % 2 === 0 ){
@@ -47,6 +49,7 @@ exports.getSubArray = ( option, array ) => {
             }
         });
     }
+
     return newArray;
 }
 
@@ -58,8 +61,6 @@ exports.checkValidity = (instructionsArray) => {
           return item;
         }
     }).length;
-    console.log(checkedArrayLength);
-    console.log(instructionsArray);
 
     if( instructionsArray.length != checkedArrayLength) {
       return false;
