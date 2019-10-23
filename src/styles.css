@@ -1,6 +1,6 @@
 :root{
     --input-height: 2rem;
-    --input-width: 25vw;
+    --input-width: 20rem;
 }
 
 .uploadFile{
@@ -8,11 +8,6 @@
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     justify-items: center;
-}
-
-.formContainer{
-    position: relative;
-    gap: 2rem;
 }
 
 .hideInput{
@@ -42,9 +37,10 @@
 
 .result{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 25vw;
+    grid-template-columns: auto auto;
     text-align: center;
+    gap: 2rem;
+    margin: 1rem 4rem;
 }
 
 .resultContainer{

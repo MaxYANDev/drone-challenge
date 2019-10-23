@@ -85,11 +85,11 @@ function App() {
                 setAnswer(res.data.data);
             })
             .catch((err) => {
-                console.log(err.response.body);
+                console.log(err);
             });
     }
 
-    const refeshPage= () => {
+    const cleanUpResult= () => {
         setAnswer(null);
     }
 
@@ -109,7 +109,7 @@ function App() {
                     />
                     <div>
                         <button 
-                            onClick={refeshPage}
+                            onClick={cleanUpResult}
                             className="submitButton refreshButton"
                         >Clear Up</button>
                     </div>
